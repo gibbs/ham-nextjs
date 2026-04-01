@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+:root {
+	color-scheme: dark;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background-color: #030712;
+	background-image:
+		linear-gradient(rgba(3, 7, 18, 0.55), rgba(3, 7, 18, 0.75)),
+		url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2000&q=80');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: #f3f4f6;
+	font-family:
+		ui-sans-serif,
+		system-ui,
+		-apple-system,
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+.card {
+	background-color: rgba(17, 24, 39, 0.72);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 0.75rem;
+	padding: 1.5rem;
+	backdrop-filter: blur(3px);
+}
+
+.pollen-none {
+	color: #6b7280;
+}
+.pollen-low {
+	color: #4ade80;
+}
+.pollen-moderate {
+	color: #facc15;
+}
+.pollen-high {
+	color: #fb923c;
+}
+.pollen-very-high {
+	color: #f87171;
+}

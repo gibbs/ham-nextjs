@@ -1,0 +1,51 @@
+{
+	"home": {
+		"loadError": "Failed to load data"
+	},
+	"preload": {
+		"title": "Ham Dashboard",
+		"location": "Buckland Brewer",
+		"loadingLabel": "Loading",
+		"loadingData": "Loading data..."
+	},
+	"binCollection": {
+		"title": "Bin Collection",
+		"noUpcoming": "No upcoming bin collections",
+		"noRecyclingReturned": "No recycling date returned by the collection service for this property.",
+		"today": "Today",
+		"tomorrow": "Tomorrow",
+		"inDays": "In {days} days",
+		"labels": {
+			"black": "Black Bin",
+			"recycling": "Recycling",
+			"garden": "Garden Waste",
+			"food": "Food Waste"
+		}
+	},
+	"dateTime": {
+		"currentTime": "Current time"
+	},
+	"weather": {
+		"unavailable": "Weather data unavailable",
+		"location": "Buckland Brewer",
+		"humidity": "Humidity",
+		"wind": "Wind",
+		"pollen": "Pollen",
+		"levels": {
+			"none": "None",
+			"low": "Low",
+			"moderate": "Moderate",
+			"high": "High",
+			"veryHigh": "Very High"
+		}
+	},
+	"fixtures": {
+		"noUpcoming": "No upcoming fixture",
+		"homeFixture": "Home fixture",
+		"awayFixture": "Away fixture"
+	},
+	"news": {
+		"noNews": "No news available",
+		"fallbackSource": "News"
+	}
+}

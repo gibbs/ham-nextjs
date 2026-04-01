@@ -1,0 +1,36 @@
+import { type NextRequest, NextResponse } from 'next/server'
+
+const STRICT_CSP = [
+	"default-src 'self'",
+	"script-src 'self' 'unsafe-inline'",
+	"style-src 'self' 'unsafe-inline'",
+	"img-src 'self' data: https:",
+	"font-src 'self'",
+	"connect-src 'self'",
+	"frame-ancestors 'none'",
+	"base-uri 'self'",
+	"form-action 'self'",
+].join('; ')
+
+export function middleware(request: NextRequest) {
+	const response = NextResponse.next()
+
+	// Docs route uses own CSP rules
+	if (!request.nextUrl.pathname.startsWith('/api/docs')) {
+		response.headers.set('Content-Security-Policy', STRICT_CSP)
+	}
+
+	response.headers.set('X-Frame-Options', 'DENY')
+	response.headers.set('X-Content-Type-Options', 'nosniff')
+	response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin')
+	response.headers.set(
+		'Permissions-Policy',
+		'camera=(), microphone=(), geolocation=()'
+	)
+
+	return response
+}
+
+export const config = {
+	matcher: '/((?!_next/static|_next/image|favicon.ico).*)',
+}

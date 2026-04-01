@@ -1,0 +1,31 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=development
+      - BIN_SERVICE_URL=http://bins:8080/api/bin_collection/
+    depends_on:
+      - bins
+    networks:
+      - ham
+
+  bins:
+    image: robbrad182/uk-bin-collection
+    ports:
+      - '8080:8080'
+    networks:
+      - ham
+
+networks:
+  ham:
+    driver: bridge
