@@ -147,7 +147,7 @@ export async function fetchWeatherData(): Promise<WeatherData> {
 
 	// Indices 1-5 = next 5 days (index 0 = today)
 	const forecastDays: WeatherDay[] = (forecast.daily.time as string[])
-		.slice(1, 6)
+		.slice(1, 4)
 		.map((date: string, i: number) => ({
 			date,
 			weathercode: (forecast.daily.weathercode as number[])[i + 1],

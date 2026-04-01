@@ -3,8 +3,8 @@
 		"loadError": "Failed to load data"
 	},
 	"preload": {
-		"title": "Ham Dashboard",
-		"location": "Buckland Brewer",
+		"title": "Ham",
+		"location": "Dashboard",
 		"loadingLabel": "Loading",
 		"loadingData": "Loading data..."
 	},
@@ -27,7 +27,7 @@
 	},
 	"weather": {
 		"unavailable": "Weather data unavailable",
-		"location": "Buckland Brewer",
+		"location": "",
 		"humidity": "Humidity",
 		"wind": "Wind",
 		"pollen": "Pollen",

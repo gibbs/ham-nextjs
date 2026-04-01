@@ -54,7 +54,7 @@ export const openApiSpec = {
 			get: {
 				summary: 'Get weather forecast',
 				description:
-					'Returns current conditions and 3-day forecast for Buckland Brewer, UK, including pollen levels.',
+					'Returns current conditions and 3-day forecast including pollen levels.',
 				operationId: 'getWeather',
 				tags: ['Weather'],
 				security: [{ bearerAuth: [] }],

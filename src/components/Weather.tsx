@@ -89,7 +89,7 @@ export default function Weather({ data }: Props) {
 				</div>
 			</div>
 
-			<div className="mt-5 grid grid-cols-5 gap-3 border-t border-white/[0.06] pt-5">
+			<div className="mt-5 grid grid-cols-3 gap-3 border-t border-white/6 pt-5">
 				{forecast.map((day) => (
 					<div
 						key={day.date}

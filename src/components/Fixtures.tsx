@@ -70,7 +70,7 @@ function TeamBlock({ name, isHome }: { name: string; isHome: boolean }) {
 				alt={`${name} badge`}
 				width={56}
 				height={56}
-				className="h-14 w-14 rounded-full border-2 border-white/10 bg-white/5 object-contain p-1"
+				className="h-20 w-20 rounded-full border-2 border-white/10 bg-white/5 object-contain p-1"
 				loading="lazy"
 				unoptimized
 			/>

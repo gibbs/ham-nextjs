@@ -5,7 +5,7 @@ describe('PreloadScreen', () => {
 	it('renders loading spinner when no error', () => {
 		render(<PreloadScreen error={null} />)
 
-		expect(screen.getByText('Ham Dashboard')).toBeInTheDocument()
+		expect(screen.getByText('Ham')).toBeInTheDocument()
 		expect(screen.getByRole('status', { name: /loading/i })).toBeInTheDocument()
 		expect(screen.getByText(/loading data/i)).toBeInTheDocument()
 	})

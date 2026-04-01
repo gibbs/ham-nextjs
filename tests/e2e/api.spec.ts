@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test'
 
-const API_KEY = process.env.API_KEY ?? 'test-api-key'
+const API_KEY = process.env.API_KEY
 
 test.describe('API routes', () => {
 	test('GET /api/data returns 200 without auth', async ({ request }) => {

@@ -42,16 +42,13 @@ export default function DateTime() {
 	const date = parts.slice(1).join(', ')
 
 	return (
-		<div
-			className="card flex flex-col justify-center gap-1"
-			data-testid="datetime"
-		>
+		<div className="card flex flex-col justify-center" data-testid="datetime">
 			<p className="text-xs font-medium uppercase tracking-widest text-gray-500">
 				{weekday}
 			</p>
 			<p className="text-lg font-semibold text-gray-100">{date}</p>
 			<p
-				className="font-mono text-3xl font-bold tabular-nums text-blue-400 xl:text-4xl"
+				className="font-sans text-3xl font-semibold tabular-nums text-blue-400 xl:text-4xl"
 				aria-live="polite"
 				aria-label={t('currentTime')}
 			>
