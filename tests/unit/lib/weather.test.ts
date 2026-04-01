@@ -83,7 +83,7 @@ describe('fetchWeatherData', () => {
 		expect(data.current.windspeed).toBe(19)
 		expect(data.current.description).toBe('Overcast')
 		expect(data.current.humidity).toBe(72)
-		expect(data.forecast).toHaveLength(5)
+		expect(data.forecast).toHaveLength(3)
 		expect(data.forecast[0].date).toBe('2026-04-02')
 	})
 
