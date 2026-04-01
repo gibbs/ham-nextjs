@@ -42,10 +42,7 @@ export default function DateTime() {
 	const date = parts.slice(1).join(', ')
 
 	return (
-		<div
-			className="card flex flex-col justify-center"
-			data-testid="datetime"
-		>
+		<div className="card flex flex-col justify-center" data-testid="datetime">
 			<p className="text-xs font-medium uppercase tracking-widest text-gray-500">
 				{weekday}
 			</p>

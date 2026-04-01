@@ -3,7 +3,8 @@
 :root {
 	color-scheme: dark;
 	--background-color: oklch(12.964% 0.02739 261.707);
-	--background-gradient: oklch(12.964% 0.02739 261.707 / 0.55), oklch(12.964% 0.02739 261.707 / 0.75);
+	--background-gradient:
+		oklch(12.964% 0.02739 261.707 / 0.55), oklch(12.964% 0.02739 261.707 / 0.75);
 	--text: oklch(96.696% 0.00298 264.792);
 	--card-bg: oklch(21.009% 0.03179 264.678 / 0.72);
 	--card-border: oklch(100% 0.00011 271.152 / 0.08);
