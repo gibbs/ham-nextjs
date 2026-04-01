@@ -2,22 +2,33 @@
 
 :root {
 	color-scheme: dark;
+	--background-color: oklch(12.964% 0.02739 261.707);
+	--background-gradient: oklch(12.964% 0.02739 261.707 / 0.55), oklch(12.964% 0.02739 261.707 / 0.75);
+	--text: oklch(96.696% 0.00298 264.792);
+	--card-bg: oklch(21.009% 0.03179 264.678 / 0.72);
+	--card-border: oklch(100% 0.00011 271.152 / 0.08);
 }
 
 html,
 body {
 	height: 100%;
+	max-height: 100vh;
+	overflow-y: scroll;
+}
+
+html {
+	font-size: 200%;
 }
 
 body {
-	background-color: #030712;
+	background-color: var(--background-color);
 	background-image:
-		linear-gradient(rgba(3, 7, 18, 0.55), rgba(3, 7, 18, 0.75)),
-		url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2000&q=80');
+		linear-gradient(var(--background-gradient)),
+		url('/assets/backgrounds/dashboard-bg.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	color: #f3f4f6;
+	color: var(--text);
 	font-family:
 		ui-sans-serif,
 		system-ui,
@@ -27,8 +38,8 @@ body {
 }
 
 .card {
-	background-color: rgba(17, 24, 39, 0.72);
-	border: 1px solid rgba(255, 255, 255, 0.08);
+	background-color: var(--card-bg);
+	border: 1px solid var(--card-border);
 	border-radius: 0.75rem;
 	padding: 1.5rem;
 	backdrop-filter: blur(3px);
