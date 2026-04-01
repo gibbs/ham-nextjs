@@ -1,0 +1,12 @@
+node_modules
+.next
+coverage
+playwright-report
+.git
+.github
+.env
+.env.*
+.swc
+npm-debug.log*
+compose-dev.yaml
+README.md
