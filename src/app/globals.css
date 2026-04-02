@@ -10,15 +10,15 @@
 	--card-border: oklch(100% 0.00011 271.152 / 0.08);
 }
 
+html {
+	font-size: 125%;
+}
+
 html,
 body {
 	height: 100%;
 	max-height: 100vh;
 	overflow-y: scroll;
-}
-
-html {
-	font-size: 200%;
 }
 
 body {
@@ -60,4 +60,16 @@ body {
 }
 .pollen-very-high {
 	color: #f87171;
+}
+
+@media (min-width: 1024px) {
+	html {
+		font-size: 150%;
+	}
+}
+
+@media (min-width: 1800px) {
+	html {
+		font-size: 200%;
+	}
 }
